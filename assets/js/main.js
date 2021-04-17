@@ -484,6 +484,6 @@
   document.querySelector('.contact_form').onsubmit = async (e) => {
     e.preventDefault();
     let formData = new FormData(document.querySelector('.contact_form'));
-    let whatsapp = 'https://api.whatsapp.com/send?phone=923201676939&text=%20Hello!%20Please%20contact%20back.%0a%0aName:%20'+formData.get('name')+'0a%Phone:%20'+formData.get('phone')+'%0aEmail:%20'+formData.get('email')+'%0a---------------------------------%0aSent from NissaMarriage.com';
+    let whatsapp = 'https://api.whatsapp.com/send?phone=923201676939&text=Hello!%20Please%20contact%20back.%0a%0aName:%20'+formData.get('name')+'%0aPhone:%20'+formData.get('phone')+'%0aEmail:%20'+formData.get('email')+'%0a---------------------------%0aSent from NissaMarriage.com';
     window.open(whatsapp, 'blank');
   };
